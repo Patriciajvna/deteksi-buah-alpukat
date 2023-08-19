@@ -53,4 +53,5 @@ def get_image():
     return send_file(image_path, mimetype='image/jpeg')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT',1000))
+    app.run(host="1.1.1.1",port=port)
