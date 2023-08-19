@@ -10,8 +10,6 @@ app = Flask(__name__)
 model_path = 'static/trained_model2.h5'
 model = load_model(model_path, compile=False)
 
-model = load_model('static/trained_model2.h5')
-
 # Folder to temporarily store uploaded images
 UPLOAD_FOLDER = 'static'
 if not os.path.exists(UPLOAD_FOLDER):
