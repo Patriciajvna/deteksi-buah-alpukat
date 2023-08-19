@@ -47,15 +47,6 @@
                 </div>
             </div>
             
-            
-                <!-- {% if persentase_rusak %}
-                    {% if persentase_rusak > 50 %}
-                        <p style="font-size: 20px;">Hasil Probabilitas Rusak : {{ persentase_rusak }}%</p>
-                    {% else %}
-                        <p style="font-size: 20px;">Hasil Probabilitas Tidak Rusak : {{ persentase_tidak_rusak }}%</p>
-                    {% endif %}
-                {% endif %} -->
-            
                 <div class="col-md-6">
                 {% if prediction %}
                     <p style="font-size: 20px;">Tingkat Probabilitas Rusak: {{ '%.3f'|format(persentase_rusak) }}%</p>
